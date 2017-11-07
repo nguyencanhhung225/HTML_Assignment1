@@ -52,6 +52,9 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nguyen Canh Hung
                             <span class="caret"></span>
                         </a>
+
+                        
+
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="#">Page 1-1</a>
@@ -68,6 +71,10 @@
                         <a href="#">
                             <span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
                     </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
                 </ul>
 
 
@@ -75,6 +82,52 @@
         </div>
     </nav>
     <!-- navbar end -->
+
+    <!-- Login start -->
+    <!-- Modal login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <form>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login system</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input"> Remember me
+                        </label>
+                    </div>
+                        
+                   
+
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- Login end -->
+
+
 
 
     <!-- slider start -->
@@ -116,45 +169,6 @@
     <!-- .content start -->
     <div class="container content">
         <h3 class="best-buy">Sản phẩm nổi bật</h3>
-
-        <!-- preview start -->
-        <div class="row text-center btn-preview-product">
-            <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#largeModal">Preview</a>
-        </div>
-        <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Login</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input"> Check me out
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                </div>
-            </div>
-        </div>
-        <!-- preview end -->
-
 
         <hr />
         <div class="row products">
